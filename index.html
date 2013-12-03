@@ -771,6 +771,8 @@
         
         $(window).ready(function(){
             skrollr.get().refresh();
+            slider = $('.bxslider').bxSlider();
+            slider.reloadSlider();
         });
 
         $(window).resize(function(){
