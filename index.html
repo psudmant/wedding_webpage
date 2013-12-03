@@ -762,13 +762,14 @@
     <script type="text/javascript">
         skrollr.init();
         
-        $(document).ready(function(){
-          $('.bxslider').bxSlider({
-            mode: 'horizontal',
-            speed: 1000,
-            startSlide: 0
-          });
-          slider.reloadSlider();
+        $(window).load(function(){
+            if ($('.bxslider').length) {
+              $('.bxslider').bxSlider({
+                mode: 'horizontal',
+                speed: 1000,
+                startSlide: 0
+                });
+              }
         });
         
         $(window).ready(function(){
