@@ -1,0 +1,340 @@
+/*imports*/
+@import "normalize";
+@import "fluid_skeleton";
+@import "bxslider";
+@import "lightbox";
+
+@import url(http://fonts.googleapis.com/css?family=Average+Sans|Poiret+One|Sintony:400,700|Raleway+Dots|Sanchez);
+
+html {
+    font: 100%/1.5em 'Poiret One', cursive;
+    font: 100%/1.5em 'Sanchez', serif;
+}
+
+body{
+    font-size:1.125em;
+    line-height:1.7em;
+}
+
+header.band {
+    background-color:#556A87;
+    color: white;
+    text-align: center;
+    padding: 10% 0 15% 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Sanchez', serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+header.band h1 {
+    font-size: 2.25em;
+    line-height: 1em;
+    margin-bottom: 1em;
+}
+
+h1.title {
+    font-size: 4.25em;
+    line-height: 1em;
+    margin-bottom: 1em;
+}
+
+
+.white {
+    color: #FFFFFF;
+}
+
+.black {
+    color: #000;
+}
+
+.slideshow {
+    padding: 10% 0 10% 0;
+}
+
+
+@media only screen and (min-width: 960px) {
+
+    header.band h1 {
+        font-size: 3.25em;
+        line-height: 1em;
+        margin-bottom: 1em;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+    body {
+        font-size: 1.125em; /* 18px / 16px */
+        line-height: 1.7em;
+    }
+    header.band {
+        background-image: url("../images/grasses.jpg");
+        background-position:0% 0%;
+        background-size: 100%;
+    }
+
+}
+
+svg{
+    height:100%; width:100%;
+}
+
+/* shapes */
+
+
+.palette{
+    min-width: 600px;
+    height: 1400px;
+    /*background-color: red;*/
+    z-index: 0;
+}
+
+.fcircle{
+    width: 180px;
+    height: 180px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    background-position:0% 0%;
+    background-size: 100%;
+    z-index: 1;
+}
+
+.fc2{
+    width: 180px;
+    height: 180px;
+}
+
+#caitlin {
+    top: 5%;
+    left: 26%;
+    background-image: url("../images/faces/Caitlin.jpg");
+    z-index: 12;
+}
+
+#peter {
+    top: 5%;
+    right: 26%;
+    background-image: url("../images/faces/Peter.jpg");
+    z-index: 5;
+}
+
+#anna {
+    top: 5%;
+    left: 25%;
+    background-image: url("../images/faces/Anna.jpg");
+    z-index: 8;
+}
+
+#graeme {
+    top: 30%;
+    right: 10%;
+    background-image: url("../images/faces/Graeme.jpg");
+    z-index: 4;
+}
+
+#emily {
+    top: 55%;
+    left: 10%;
+    background-image: url("../images/faces/Emily.jpg");
+    z-index: 9;
+}
+
+#andrew {
+    top: 55%;
+    right: 10%;
+    background-image: url("../images/faces/Andrew.jpg");
+    z-index: 3;
+}
+
+#catherine {
+    top: 80%;
+    left: 10%;
+    background-image: url("../images/faces/Catherine.jpg");
+    z-index: 7;
+}
+
+#adam {
+    top: 80%;
+    right: 10%;
+    background-image: url("../images/faces/Adam.jpg");
+    z-index: 2;
+}
+
+#jean {
+    top: 80%;
+    left: 10%;
+    background-image: url("../images/faces/Jean.jpg");
+    z-index: 11;
+}
+
+#mark {
+    top: 80%;
+    right: 10%;
+    background-image: url("../images/faces/Mark.jpg");
+    z-index: 1;
+}
+
+
+#michael {
+    top: 80%;
+    left: 10%;
+    background-image: url("../images/faces/Michael.jpg");
+    z-index: 10;
+}
+
+#martyn {
+    top: 80%;
+    right: 10%;
+    background-image: url("../images/faces/Martyn.jpg");
+    z-index: 0;
+}
+
+#reed {
+    top: 85%;
+    left: 40%;
+    background-image: url("../images/faces/Reed.jpg");
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+}
+
+h1.nametxt {
+    font-size: 1.0em;
+    line-height: 1em;
+    margin-bottom: 1em;
+    color: #000;
+    position: absolute;
+    z-index: 0;
+    rotation-point:0% 0%;
+    height:200px;
+    width:200px;
+}
+
+.lefttxt {
+    text-align:left;
+}
+
+.righttxt {
+    text-align:right;
+}
+
+#map {
+    border-style: solid;
+    border-width: 15px;
+    border-color: #e5eecc;
+    border-color:#556A87;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+
+.flttxt{
+    float:left;
+}
+
+
+
+.marker{
+    width: 32px;
+    height: 47px;
+    position: relative;
+    background-position:0% 0%;
+    background-repeat:no-repeat;
+    float: left;
+}
+
+h3.mrkrtxt{
+    position: absolute;
+    width:100%;
+    top:-45%;
+    left:0%;
+    color:#FFF;
+}
+.places_list{
+    list-style: none;
+}
+.o_marker{
+    background-image: url("../images/orange.png");
+}
+.b_marker{
+    background-image: url("../images/blue.png");
+}
+.gn_marker{
+    background-image: url("../images/green.png");
+}
+.gy_marker{
+    background-image: url("../images/grey.png");
+}
+
+
+img.imgs {
+    position: absolute;
+}
+
+.mountains {
+    width: 100%;
+    height: 800px;
+    min-width: 500px;
+    background-size: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.mfront {
+    background-repeat:no-repeat;
+    background-image: url("../images/mountains/front-01.png");
+    z-index:6;
+}
+
+.mmiddle {
+    background-image: url("../images/mountains/middle-01.png");
+    z-index:5;
+}
+
+.mback {
+    background-image: url("../images/mountains/back-01.png");
+    z-index:4;
+}
+
+.mfrontback {
+    background-image: url("../images/mountains/front_back-01.png");
+    z-index:3;
+}
+
+.mmiddleback {
+    background-image: url("../images/mountains/middle_back-01.png");
+    z-index:2;
+}
+
+.palette_two{
+    min-width: 600px;
+    width:100%;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.train {
+    width: 100%;
+    background-size: 100%;
+    height: 800px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url("../images/mountains/train-01.png");
+    z-index: 1;
+}
+
+.tracks {
+    background-image: url("../images/mountains/tracks.png");
+    width: 100%;
+    background-size: 50%;
+    height: 800px;
+    position: absolute;
+    background-repeat: repeat-x;
+    z-index: 4;
+}
