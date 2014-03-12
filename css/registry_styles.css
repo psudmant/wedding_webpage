@@ -15,6 +15,10 @@ html {
     left:5%;
 }
 
+a:link { color:#000; }
+a:visited {color:#222;}
+a:hover {color:#FFF;} 
+
 .right
 {
     position:absolute;    
